@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Special Surprise For You</title>
+  <link rel="stylesheet" href="letterstyle.css" />
+</head>
+<body>
+
+  <!-- Moving Galaxy Background Canvas -->
+  <canvas id="galaxy-canvas"></canvas>
+
+  <!-- Ambient Floating Heart Particles -->
+  <div class="floating-hearts-container" id="hearts-container"></div>
+
+  <!-- Interactive 3D Presentation Scene -->
+  <main class="scene-container">
+    <h1 class="prompt-title" id="promptTitle">Would you like to open the Box? ✨</h1>
+
+    <div class="box-wrapper">
+      <div class="box-3d" id="box3D">
+        <div class="box-face box-front"></div>
+        <div class="box-face box-back"></div>
+        <div class="box-face box-left"></div>
+        <div class="box-face box-right"></div>
+        <div class="box-face box-bottom"></div>
+        <div class="box-lid">
+          <div class="lid-bow"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls-area" id="controlsArea">
+      <button class="btn btn-yes" id="yesBtn">Yes 💖</button>
+      <button class="btn btn-no" id="noBtn">No 🙈</button>
+    </div>
+  </main>
+
+  <!-- Floating Love Letter Unfold Overlay -->
+  <div class="letter-overlay" id="letterModal">
+    <article class="letter-paper">
+
+      <!-- Boy Standing on Mountain Watching Moon SVG Graphic -->
+      <div class="letter-scenery">
+        <svg viewBox="0 0 600 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="skyGlow" cx="65%" cy="22%" r="60%">
+              <stop offset="0%" stop-color="#2a164d" />
+              <stop offset="60%" stop-color="#140a2b" />
+              <stop offset="100%" stop-color="#070312" />
+            </radialGradient>
+            <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#ffffff" />
+              <stop offset="60%" stop-color="#fff8db" />
+              <stop offset="100%" stop-color="rgba(255, 230, 150, 0)" />
+            </radialGradient>
+            <filter id="blurFilter">
+              <feGaussianBlur stdDeviation="15" />
+            </filter>
+          </defs>
+
+          <!-- Starry Dark Sky Base -->
+          <rect width="600" height="900" fill="url(#skyGlow)" />
+
+          <!-- Distant Stars & Constellations -->
+          <circle cx="80" cy="120" r="1.5" fill="#fff" opacity="0.8" />
+          <circle cx="150" cy="70" r="2" fill="#ffd1dc" opacity="0.9" />
+          <circle cx="230" cy="180" r="1" fill="#fff" opacity="0.7" />
+          <circle cx="480" cy="90" r="2.5" fill="#fff" opacity="0.85" />
+          <circle cx="530" cy="240" r="1.5" fill="#ffd1dc" opacity="0.7" />
+          <circle cx="110" cy="320" r="1.5" fill="#fff" opacity="0.6" />
+          <circle cx="290" cy="290" r="2" fill="#fff" opacity="0.7" />
+
+          <!-- Giant Luminous Moon & Haze -->
+          <circle cx="430" cy="180" r="85" fill="#ffeaa7" filter="url(#blurFilter)" opacity="0.35" />
+          <circle cx="430" cy="180" r="48" fill="url(#moonGlow)" />
+          <circle cx="415" cy="165" r="44" fill="#140a2b" opacity="0.18" />
+
+          <!-- Distant Mountain Ridge -->
+          <path d="M-50 780 L120 620 L280 710 L450 580 L650 730 L650 900 L-50 900 Z" fill="#180b33" opacity="0.85" />
+
+          <!-- Foreground Cliff Mountain Peak -->
+          <path d="M0 900 L0 740 L160 670 L260 590 L340 680 L600 790 L600 900 Z" fill="#0c0419" />
+
+          <!-- Silhouette of Boy Standing on Mountain Peak Gazing at Moon -->
+          <g transform="translate(254, 508) scale(0.95)" fill="#06020c">
+            <!-- Head & Wind-blown Hair -->
+            <circle cx="12" cy="12" r="8" />
+            <path d="M6 12 Q3 8 7 5 Q12 4 18 8 Q14 14 6 12 Z" />
+            <!-- Neck & Body Jacket -->
+            <rect x="7" y="20" width="10" height="25" rx="3" />
+            <path d="M4 22 L20 22 L18 45 L6 45 Z" />
+            <!-- Wind-swept Coat Tail -->
+            <path d="M6 35 Q-5 42 -2 50 Q5 46 7 42 Z" />
+            <!-- Legs standing firmly on the ledge -->
+            <rect x="7" y="45" width="4.5" height="34" rx="2" />
+            <rect x="13.5" y="45" width="4.5" height="34" rx="2" />
+            <!-- Feet/Boots -->
+            <ellipse cx="8" cy="80" rx="4" ry="2" />
+            <ellipse cx="16" cy="80" rx="4.5" ry="2" />
+          </g>
+        </svg>
+      </div>
+
+      <div class="letter-stamp">💌</div>
+
+      <div class="letter-body">
+        <p>Dear Chay_Chay,</p>
+        <p>
+          I am deeply sorry for some things like giving you money or something like that. But I swear to you, Imoha rako. Usahay feel nako na dli jd ko nimo love pero wala ko nawad an ug pag_asa na higugmaon pa tika even if dli tika feel physicaly.
+        </p>
+        <p>
+          Naniniwala ako na balang araw magkikita tayo, tanging wish ko lang ay hindi ka ma inlove sa iba. Alam ko selfish, but hindi naman tika pipigilan kung magmahal ka man nang iba, na higit pa sa akin. Kung saan ka masaya ay doon din ako papanig sa iyo.
+        </p>
+        <p>
+          Alam mo ba kung bakit pinili Kita? Chat mo or PM mo nalang ako. Arigato in reading this message. I'm still holding on. Take care sa imong self ha. Kay kung mo abot ang saktong panahon, pakaslan pa tika.
+        </p>
+        <div class="letter-sign">
+          Loving yours Chin_Chin nimo ❤️
+        </div>
+      </div>
+
+      <!-- Button to Return to Choices -->
+      <div class="letter-actions">
+        <button class="btn btn-back" id="backBtn">Go Back ↩</button>
+      </div>
+
+    </article>
+  </div>
+
+  <script>
+    /* =========================================================
+       1. INTERACTIVE MOVING GALAXY ENGINE
+       ========================================================= */
+    const canvas = document.getElementById('galaxy-canvas');
+    const ctx = canvas.getContext('2d');
+    let stars = [];
+    const STAR_COUNT = 180;
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    class CosmicStar {
+      constructor() {
+        this.reset(true);
+      }
+      reset(initial = false) {
+        this.x = (Math.random() - 0.5) * canvas.width * 1.5;
+        this.y = (Math.random() - 0.5) * canvas.height * 1.5;
+        this.z = initial ? Math.random() * 1000 : 1000;
+        this.size = Math.random() * 1.5 + 0.5;
+        const tones = ['#ffffff', '#ffd1dc', '#bb99ff', '#80d4ff'];
+        this.color = tones[Math.floor(Math.random() * tones.length)];
+      }
+      update() {
+        this.z -= 1.8;
+        if (this.z <= 0) {
+          this.reset();
+        }
+      }
+      draw() {
+        const cx = canvas.width / 2;
+        const cy = canvas.height / 2;
+        const k = 250 / this.z;
+        const px = this.x * k + cx;
+        const py = this.y * k + cy;
+
+        if (px >= 0 && px <= canvas.width && py >= 0 && py <= canvas.height) {
+          const alpha = (1 - this.z / 1000);
+          ctx.beginPath();
+          ctx.arc(px, py, this.size * k * 0.8, 0, Math.PI * 2);
+          ctx.fillStyle = this.color;
+          ctx.globalAlpha = alpha;
+          ctx.shadowBlur = 8;
+          ctx.shadowColor = this.color;
+          ctx.fill();
+        }
+      }
+    }
+
+    for (let i = 0; i < STAR_COUNT; i++) {
+      stars.push(new CosmicStar());
+    }
+
+    function renderGalaxy() {
+      ctx.fillStyle = 'rgba(9, 3, 20, 0.35)';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      for (let star of stars) {
+        star.update();
+        star.draw();
+      }
+      requestAnimationFrame(renderGalaxy);
+    }
+    renderGalaxy();
+
+    /* =========================================================
+       2. AMBIENT FLOATING HEARTS
+       ========================================================= */
+    const heartsContainer = document.getElementById('hearts-container');
+    const heartSymbols = ['💖', '✨', '🌸', '💕', '⭐'];
+
+    function spawnHeart() {
+      const heart = document.createElement('div');
+      heart.className = 'heart-particle';
+      heart.textContent = heartSymbols[Math.floor(Math.random() * heartSymbols.length)];
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.fontSize = Math.random() * 16 + 14 + 'px';
+      heart.style.animationDuration = Math.random() * 3 + 4 + 's';
+      heartsContainer.appendChild(heart);
+
+      setTimeout(() => heart.remove(), 7000);
+    }
+    setInterval(spawnHeart, 450);
+
+    /* =========================================================
+       3. INTERACTIVE LOGIC & EVASIVE BUTTON ENGINE
+       ========================================================= */
+    const promptTitle = document.getElementById('promptTitle');
+    const controlsArea = document.getElementById('controlsArea');
+    const box3D = document.getElementById('box3D');
+    const letterModal = document.getElementById('letterModal');
+    const backBtn = document.getElementById('backBtn');
+
+    function bindControls() {
+      const yesBtn = document.getElementById('yesBtn');
+      const noBtn = document.getElementById('noBtn');
+
+      if (noBtn) {
+        function dodgeCursor() {
+          const padding = 80;
+          const maxX = window.innerWidth - noBtn.offsetWidth - padding;
+          const maxY = window.innerHeight - noBtn.offsetHeight - padding;
+
+          const randomX = Math.max(padding, Math.floor(Math.random() * maxX));
+          const randomY = Math.max(padding, Math.floor(Math.random() * maxY));
+
+          noBtn.style.position = 'fixed';
+          noBtn.style.left = `${randomX}px`;
+          noBtn.style.top = `${randomY}px`;
+        }
+
+        noBtn.addEventListener('mouseenter', dodgeCursor);
+        noBtn.addEventListener('touchstart', (e) => {
+          e.preventDefault();
+          dodgeCursor();
+        });
+      }
+
+      if (yesBtn) {
+        yesBtn.addEventListener('click', () => {
+          promptTitle.style.opacity = '0';
+          setTimeout(() => {
+            promptTitle.textContent = 'This is a special message just for you ✨';
+            promptTitle.style.opacity = '1';
+          }, 400);
+
+          controlsArea.innerHTML = `
+            <button class="btn btn-continue" id="continueBtn">Continue 💌</button>
+          `;
+
+          const continueBtn = document.getElementById('continueBtn');
+          continueBtn.addEventListener('click', () => {
+            box3D.classList.add('opened');
+            setTimeout(() => {
+              letterModal.classList.add('show');
+            }, 900);
+          });
+        });
+      }
+    }
+
+    // Go Back Button: Closes the letter and resets to initial choices
+    backBtn.addEventListener('click', () => {
+      // 1. Hide the letter modal
+      letterModal.classList.remove('show');
+
+      // 2. Shut the box lid
+      setTimeout(() => {
+        box3D.classList.remove('opened');
+      }, 400);
+
+      // 3. Reset title
+      promptTitle.style.opacity = '0';
+      setTimeout(() => {
+        promptTitle.textContent = 'Would you like to open the Box? ✨';
+        promptTitle.style.opacity = '1';
+      }, 400);
+
+      // 4. Restore Yes / No buttons
+      controlsArea.innerHTML = `
+        <button class="btn btn-yes" id="yesBtn">Yes 💖</button>
+        <button class="btn btn-no" id="noBtn">No 🙈</button>
+      `;
+
+      // 5. Rebind interactive listeners
+      bindControls();
+    });
+
+    // Initialize listeners on page load
+    bindControls();
+  </script>
+</body>
+</html>
